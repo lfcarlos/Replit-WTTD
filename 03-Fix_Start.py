@@ -1,4 +1,4 @@
-cl"""
+"""
 03. fix_start
 Dada uma string s, retorne uma string onde
 todas as ocorrências do primeiro caracter de s
