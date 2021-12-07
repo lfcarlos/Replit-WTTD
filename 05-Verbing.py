@@ -81,3 +81,5 @@ if __name__ == '__main__':
     #test(verbing, 'visit', 'visiting') #excessão -> a última silaba não é tônica
     #test(verbing, 'die', 'dying')
     #test(verbing, 'lie', 'lying')
+
+    

@@ -8,9 +8,32 @@ Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 """
 
 def not_bad(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    palavra1 = 0
+    palavra2 = 0
+    resultado = s
+    cont = 0
+    if 'not' in s:
+      palavra1 = s.index('not')
+      if 'bad' in s:
+        palavra2 = s.index('bad')
+        if palavra2 > palavra1:
+          cont = palavra2 + 3
+          resultado = s.replace(s[palavra1:cont], 'good')
 
+    return resultado
+
+def not_bad_01(s):
+  mensagem = s
+  if 'not' in s:
+    indice_not = s.index('not')
+    
+    if 'bad' in s:
+      indice_bad = s.index('bad')
+
+      if indice_bad > indice_not:
+        mensagem = s.replace(s[indice_not:indice_bad+3],'good')
+
+    return mensagem
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
